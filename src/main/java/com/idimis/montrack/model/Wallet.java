@@ -7,7 +7,7 @@ public class Wallet {
     private Boolean isActive;
 
     // Constructors
-    public Wallet() {}
+    public Wallet(int id, int userId, String name, int amount, boolean isActive) {}
 
     public Wallet(Integer id, String name, Integer amount, Boolean isActive) {
         this.id = id;
