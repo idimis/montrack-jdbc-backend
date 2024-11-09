@@ -30,6 +30,11 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;  // To check password hash
 
+    @GetMapping
+    public String testing() {
+        return "auth testing";
+    }
+
     @PostMapping
     public ResponseEntity<Map<String, String>> login(@RequestBody LoginRequest loginRequest) {
         // Query to find the user by email
